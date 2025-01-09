@@ -1,0 +1,900 @@
+[
+  {
+    "id": 0,
+    "title": "Lima",
+    "description": "Explorar el Centro Histórico: Visita la Plaza Mayor, la Catedral de Lima y el Palacio de Gobierno. Prueba platos típicos como el ceviche, lomo saltado . Pasear por el Malecón de Miraflores: Este paseo ofrece vistas impresionantes del océano Pacífico y es perfecto para caminar o simplemente relajarse y disfrutar del paisaje.",
+    "price": 200,
+    "discountPercentage": 16,
+    "rating": 4.74,
+    "stock": 133,
+    "brand": "Lima",
+    "category": "Peru",
+    "thumbnail": "https://th.bing.com/th/id/OIP.OzwmPv_ajtp_A_-u-BFxOgHaE8?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/100/1.jpg",
+      "https://i.dummyjson.com/data/products/100/2.jpg",
+      "https://i.dummyjson.com/data/products/100/3.jpg",
+      "https://i.dummyjson.com/data/products/100/thumbnail.jpg"
+    ]
+  },
+
+  {
+    "id": 1,
+    "title": "Macchu Picchu",
+    "description": "Explorar las ruinas: Pasea por las antiguas ruinas incas y maravíllate con la arquitectura y la historia de este sitio arqueológico. Este recorrido de varios días te llevará a través de paisajes impresionantes y te permitirá llegar a Machu Picchu a pie.Visitar el Museo de Sitio Manuel Chávez Ballón: Este museo, ubicado cerca de Aguas Calientes, ofrece información detallada sobre la historia y la arqueología de Machu Picchu.",
+    "price": 500,
+    "discountPercentage": 12.96,
+    "rating": 4.69,
+    "stock": 94,
+    "brand": "Macchu Picchu",
+    "category": "Peru",
+    "thumbnail": "https://th.bing.com/th/id/R.cdfdd1add79f6682f2ec5519a4f75b9c?rik=Cm4%2fpA9vKs%2bZnA&riu=http%3a%2f%2fbetterlivingthroughbeowulf.com%2fwp-content%2fuploads%2f2015%2f06%2fMachu-Picchu.jpg&ehk=BNWPPNSv5aDtFNboodRGvCjyA3cX1BLBliAsLIiD2Ng%3d&risl=1&pid=ImgRaw&r=0",
+    "images": [
+      "https://i.dummyjson.com/data/products/1/1.jpg",
+      "https://i.dummyjson.com/data/products/1/2.jpg",
+      "https://i.dummyjson.com/data/products/1/3.jpg",
+      "https://i.dummyjson.com/data/products/1/4.jpg",
+      "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Laguna Azul",
+    "description": "Paseos en bote: Disfruta de un relajante paseo en bote por las aguas cristalinas de la laguna. Las aguas tranquilas y limpias hacen que estas actividades sean seguras y divertidas.Senderismo y exploración: Los alrededores de la laguna ofrecen rutas de senderismo que te permiten explorar la exuberante vegetación y disfrutar de vistas panorámicas.",
+    "price": 350,
+    "discountPercentage": 17.94,
+    "rating": 4.44,
+    "stock": 34,
+    "brand": "Laguna Azul",
+    "category": "Peru",
+    "thumbnail": "https://th.bing.com/th/id/R.75c70fe12cbea77b0f7d8a34c08f38de?rik=hCSdVrt4W4WrYg&riu=http%3a%2f%2fnaturatourism.com%2fwp-content%2fuploads%2f2021%2f05%2foptimized_LAGUNA__AZUL_10.jpeg&ehk=YCGbEai91AdcJ8zal6WyjqVWN5tNtM96%2fqed0hOYzGs%3d&risl=&pid=ImgRaw&r=0",
+    "images": [
+      "https://i.dummyjson.com/data/products/2/1.jpg",
+      "https://i.dummyjson.com/data/products/2/2.jpg",
+      "https://i.dummyjson.com/data/products/2/3.jpg",
+      "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Bogota",
+    "description": "Bogotá, la capital de Colombia.Combina modernidad e historia con lugares como La Candelaria, el Monserrate y el Parque Simón Bolívar. Es famosa por su rica escena cultural, con festivales y mercados de artesanías. La ciudad cuenta con un sistema de transporte público eficiente, incluyendo el TransMilenio.",
+    "price": 249,
+    "discountPercentage": 15.46,
+    "rating": 4.09,
+    "stock": 36,
+    "brand": "Bogota",
+    "category": "Colombia",
+    "thumbnail": "https://www.tripsavvy.com/thmb/1xZnGqzWGHLzkSxXpGejT_9jeYk=/6016x4016/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-755741491WEB-5c192e98c9e77c00019f4219.jpg",
+    "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
+  },
+  {
+    "id": 4,
+    "title": "Santa Marta",
+    "description": "Santa Marta, ubicada en la costa caribeña de Colombia, es una ciudad histórica y turística. Es conocida por sus playas como El Rodadero y Playa Blanca. La ciudad ofrece una mezcla de cultura, naturaleza y aventura. Es un destino ideal para disfrutar del sol, el mar y la historia.",
+    "price": 380,
+    "discountPercentage": 17.91,
+    "rating": 4.3,
+    "stock": 123,
+    "brand": "Santa Marta",
+    "category": "Colombia",
+    "thumbnail": "https://th.bing.com/th/id/OIP.zplqoai-4uiQKa2FruULDgHaE9?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/4/1.jpg",
+      "https://i.dummyjson.com/data/products/4/2.jpg",
+      "https://i.dummyjson.com/data/products/4/3.jpg",
+      "https://i.dummyjson.com/data/products/4/4.jpg",
+      "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cartagena de Indias",
+    "description": "Cartagena de Indias, es una ciudad histórica y turística. Es famosa por su Ciudad Amurallada, con calles empedradas y arquitectura colonial. Las playas de Bocagrande y el Castillo de San Felipe de Barajas son destinos populares. Cartagena ofrece una mezcla de historia, cultura y belleza natural.",
+    "price": 199,
+    "discountPercentage": 10.58,
+    "rating": 4.09,
+    "stock": 32,
+    "brand": "Cartagena de Indias",
+    "category": "Colombia",
+    "thumbnail": "https://cdn-images-1.medium.com/max/2000/1*y23_8TB0mxV_lOHcCR34Hw.jpeg",
+    "images": [
+      "https://i.dummyjson.com/data/products/5/1.jpg",
+      "https://i.dummyjson.com/data/products/5/2.jpg",
+      "https://i.dummyjson.com/data/products/5/3.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Santiago de Chile",
+    "description": "Santiago de Chile, la capital de Chile, es una ciudad moderna y vibrante situada en un valle rodeado de montañas. Destacan el Cerro San Cristóbal y el Cerro Santa Lucía por sus vistas panorámicas. La ciudad ofrece una rica vida cultural con museos, teatros y una variada gastronomía.",
+    "price": 150,
+    "discountPercentage": 11.02,
+    "rating": 4.57,
+    "stock": 83,
+    "brand": "Santiago de chile",
+    "category": "Chile",
+    "thumbnail": "https://4.bp.blogspot.com/-a1ZaeYUQjBU/V6TtXMY9-9I/AAAAAAAACzA/oeV6Q7BrqoUHjcIQN4YVjlDV5jaifqC4wCLcB/s1600/santiago-24horas.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/6/1.png",
+      "https://i.dummyjson.com/data/products/6/2.jpg",
+      "https://i.dummyjson.com/data/products/6/3.png",
+      "https://i.dummyjson.com/data/products/6/4.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "San Pedro de Atacama",
+    "description": "San Pedro de Atacama, ubicado en el desierto de Atacama en Chile, es un destino turístico famoso por sus paisajes áridos y únicos. Destacan el Valle de la Luna, los Géiseres del Tatio y las Lagunas Altiplánicas. Es un lugar ideal para el turismo de aventura y la observación de estrellas.",
+    "price": 149,
+    "discountPercentage": 4.15,
+    "rating": 4.25,
+    "stock": 50,
+    "brand": "San Pedro de Atacama",
+    "category": "Chile",
+    "thumbnail": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/121000/121148-San-Pedro-De-Atacama.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh",
+    "images": [
+      "https://i.dummyjson.com/data/products/7/1.jpg",
+      "https://i.dummyjson.com/data/products/7/2.jpg",
+      "https://i.dummyjson.com/data/products/7/3.jpg",
+      "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Parque Nacional Torres del Paine",
+    "description": "Parque Nacional Torres del Paine, ubicado en la Patagonia chilena, es uno de los destinos naturales más impresionantes del mundo. Conocido por sus majestuosas montañas, glaciares, lagos y ríos, ofrece paisajes espectaculares como el Valle del Francés y el Glaciar Grey.",
+    "price": 499,
+    "discountPercentage": 10.23,
+    "rating": 4.43,
+    "stock": 68,
+    "brand": "Parque Nacional Torres del Paine",
+    "category": "Chile",
+    "thumbnail": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/5c/38/15/torres-del-paine-national.jpg?w=1200&h=1200&s=1",
+    "images": [
+      "https://i.dummyjson.com/data/products/8/1.jpg",
+      "https://i.dummyjson.com/data/products/8/2.jpg",
+      "https://i.dummyjson.com/data/products/8/3.jpg",
+      "https://i.dummyjson.com/data/products/8/4.jpg",
+      "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Buenos Aires",
+    "description": "Buenos Aires, la capital de Argentina. Conocida por su arquitectura europea y su rica vida cultural, ofrece lugares emblemáticos como el Teatro Colón, el Barrio de La Boca y la Avenida 9 de Julio. La ciudad es famosa por su tango, su gastronomía y su animada vida nocturna. Destino ideal para disfrutar de la cultura, la historia y el entretenimiento.",
+    "price": 250,
+    "discountPercentage": 11.83,
+    "rating": 4.54,
+    "stock": 96,
+    "brand": "Buenos Aires",
+    "category": "Argentina",
+    "thumbnail": "https://i1.wp.com/vacacionesporargentina.com/wp-content/uploads/2020/04/buenos-aires-508790_1920.jpg?fit=1920%2C1440&ssl=1",
+    "images": [
+      "https://i.dummyjson.com/data/products/9/1.jpg",
+      "https://i.dummyjson.com/data/products/9/2.png",
+      "https://i.dummyjson.com/data/products/9/3.png",
+      "https://i.dummyjson.com/data/products/9/4.jpg",
+      "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Cataratas del Iguazu",
+    "description": "Cataratas del Iguazú, ubicadas en la frontera entre Argentina y Brasil, son una de las maravillas naturales más impresionantes del mundo. Este sistema de cascadas cuenta con más de 275 saltos de agua, siendo la Garganta del Diablo el más espectacular. Rodeadas de exuberante selva tropical.",
+    "price": 300,
+    "discountPercentage": 6.18,
+    "rating": 4.43,
+    "stock": 89,
+    "brand": "Cataratas del iguazu",
+    "category": "Argentina",
+    "thumbnail": "https://static.misionesonline.news/wp-content/uploads/2021/01/cataratas-bellas-Kopie.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/10/1.jpg",
+      "https://i.dummyjson.com/data/products/10/2.jpg",
+      "https://i.dummyjson.com/data/products/10/3.jpg",
+      "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Patagonia",
+    "description": "Patagonia, una región vasta y remota en el sur de Argentina y Chile, es conocida por sus paisajes impresionantes y su naturaleza salvaje. Es un destino ideal para el senderismo, la observación de fauna y la aventura al aire libre, ofreciendo una experiencia única de belleza natural y tranquilidad.",
+    "price": 190,
+    "discountPercentage": 8.4,
+    "rating": 4.26,
+    "stock": 65,
+    "brand": "Patagonia",
+    "category": "Argentina",
+    "thumbnail": "https://viajes.nationalgeographic.com.es/medio/2019/03/28/perito_81920ccb_1280x720.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/11/1.jpg",
+      "https://i.dummyjson.com/data/products/11/2.jpg",
+      "https://i.dummyjson.com/data/products/11/3.jpg",
+      "https://i.dummyjson.com/data/products/11/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Rio de Janeiro",
+    "description": "Río de Janeiro, una ciudad vibrante en la costa de Brasil, es famosa por sus playas icónicas como Copacabana e Ipanema. Destacan el Cristo Redentor y por sus vistas panorámicas. La ciudad es conocida por su animado carnaval, su música samba y su rica vida cultural.",
+    "price": 350,
+    "discountPercentage": 15.66,
+    "rating": 4,
+    "stock": 52,
+    "brand": "Rio de Janeiro",
+    "category": "Brasil",
+    "thumbnail": "https://www.turismocarey.tur.ar/wp-content/uploads/2016/12/rio-web.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/12/1.jpg",
+      "https://i.dummyjson.com/data/products/12/2.jpg",
+      "https://i.dummyjson.com/data/products/12/3.png",
+      "https://i.dummyjson.com/data/products/12/4.jpg",
+      "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Foz de Iguazu",
+    "description": "Foz de Iguazú, ubicada en Brasil. La ciudad ofrece una mezcla de belleza natural y actividades turísticas, incluyendo el Parque Nacional Iguazú y la Represa de Itaipú. Es un destino ideal para los amantes de la naturaleza y la aventura.",
+    "price": 230,
+    "discountPercentage": 8.14,
+    "rating": 4.59,
+    "stock": 61,
+    "brand": "Foz de Iguazu",
+    "category": "Brasil",
+    "thumbnail": "https://www.vinosycaminos.com/imagenes/Fozdolguacu.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/13/1.jpg",
+      "https://i.dummyjson.com/data/products/13/2.png",
+      "https://i.dummyjson.com/data/products/13/3.jpg",
+      "https://i.dummyjson.com/data/products/13/4.jpg",
+      "https://i.dummyjson.com/data/products/13/thumbnail.webp"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Salvador de Bahia",
+    "description": "Salvador de Bahía, ubicada en la costa noreste de Brasil. Conocida por su Centro Histórico y el Pelourinho, ofrece una rica mezcla de arquitectura colonial y cultura afrobrasileña. Las playas como Porto da Barra y el Elevador Lacerda son destinos populares. Salvador es famosa por su carnaval, su música y su gastronomía.",
+    "price": 120,
+    "discountPercentage": 15.6,
+    "rating": 4.21,
+    "stock": 114,
+    "brand": "Salvador de Bahia",
+    "category": "Brasil",
+    "thumbnail": "https://www.fodors.com/wp-content/uploads/2019/06/8_SalvadorReasonsToVisit_HillyViews_shutterstock1119724322-1600x1067.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/14/1.jpg",
+      "https://i.dummyjson.com/data/products/14/2.jpg",
+      "https://i.dummyjson.com/data/products/14/3.jpg",
+      "https://i.dummyjson.com/data/products/14/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Roma",
+    "description": "Roma, la capital de Italia, es una ciudad rica en historia y cultura. Conocida como la `Ciudad Eterna`, ofrece monumentos icónicos como el Coliseo, el Foro Romano y la Fontana di Trevi. Roma combina su herencia antigua con una vibrante vida moderna, incluyendo museos, plazas y una deliciosa gastronomía.",
+    "price": 350,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Roma",
+    "category": "Italia",
+    "thumbnail": "https://th.bing.com/th/id/R.36f2cf9b8f5617c5ab9e3cc8cd36473b?rik=sQDJaaiI741zjQ&pid=ImgRaw&r=0",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Venecia",
+    "description": "Venecia, situada en el noreste de Italia, es una ciudad única construida sobre un conjunto de islas conectadas por canales y puentes. Famosa por sus góndolas y su arquitectura renacentista, ofrece lugares emblemáticos como la Plaza de San Marcos, el Puente de Rialto y el Gran Canal. Venecia es un destino ideal para disfrutar de su rica historia, su arte y su ambiente romántico.",
+    "price": 350,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Venecia",
+    "category": "Italia",
+    "thumbnail": "https://th.bing.com/th/id/R.7caad24e24d3dc5f73bca0a2d7cdf1f5?rik=6ZHfxJ7276qRJw&riu=http%3a%2f%2fimg.felicesvacaciones.es%2f2016%2f07%2f06%2fvenecia.jpg&ehk=z%2b8J6do6Bh3hjc4mPZmCzLcc4VTFTXv1LZDwnNnAlSk%3d&risl=&pid=ImgRaw&r=0",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Florencia",
+    "description": "Florencia, situada en la región de la Toscana en Italia, es una ciudad famosa por su arte y arquitectura renacentista. Destacan la Catedral de Santa María del Fiore, el Puente Viejo y la Galería Uffizi. Florencia es un destino ideal para los amantes del arte, la historia y la cultura, ofreciendo una experiencia única en cada rincón de la ciudad.",
+    "price": 290,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Florencia",
+    "category": "Italia",
+    "thumbnail": "https://www.myfashionlife.com/wp-content/uploads/2019/05/florence_italy.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Barcelona",
+    "description": "Barcelona, situada en la costa noreste de España, es una ciudad vibrante y cosmopolita. Conocida por su arquitectura modernista, ofrece lugares emblemáticos como la Sagrada Familia, el Parque Güell y La Rambla. Barcelona es famosa por su rica vida cultural, sus playas y su animada vida nocturna. Es un destino ideal para disfrutar de la historia, el arte y la gastronomía.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Barcelona",
+    "category": "España",
+    "thumbnail": "https://th.bing.com/th/id/OIP.1hrgSTdHib1PemCsM104cAHaE8?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Madrid",
+    "description": "Madrid, la capital de España, es una ciudad vibrante y cosmopolita. Conocida por su rica historia y cultura, ofrece lugares emblemáticos como el Palacio Real, la Plaza Mayor y el Museo del Prado. La ciudad es famosa por su vida nocturna, su gastronomía y sus eventos culturales. Madrid es un destino ideal para disfrutar de la historia, el arte y la modernidad.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Madrid",
+    "category": "España",
+    "thumbnail": "https://th.bing.com/th/id/OIP.0F77oOwe9Y9jVK1WIs311wHaE7?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Sevilla",
+    "description": "Sevilla, situada en el sur de España, es una ciudad rica en historia y cultura. Conocida por su Catedral de Sevilla y la Giralda, ofrece una mezcla de arquitectura gótica y renacentista. La Plaza de España y el Real Alcázar son otros puntos destacados. Sevilla es famosa por su flamenco, su gastronomía y sus festividades como la Semana Santa y la Feria de Abril. Es un destino ideal para disfrutar de la historia, la cultura y la belleza arquitectónica.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Sevilla",
+    "category": "España",
+    "thumbnail": "https://th.bing.com/th/id/R.5c9a1eb6a276e35aacc4245c5997ac8d?rik=4LqnJXR%2bCtNSbA&riu=http%3a%2f%2fiaeste.es%2fwp-content%2fuploads%2f2016%2f06%2fSevilla.jpg&ehk=IQus4Qj5MuNUR%2bUVFAW3gI0bycIZasjwlALDfUnF%2bxg%3d&risl=&pid=ImgRaw&r=0",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Lisboa",
+    "description": "Lisboa, la capital de Portugal, es una ciudad encantadora y llena de historia. Conocida por sus colinas y tranvías, ofrece lugares emblemáticos como la Torre de Belém, el Monasterio de los Jerónimos y el Barrio de Alfama. Lisboa es famosa por su música fado, su gastronomía y sus vistas panorámicas desde miradores como el Elevador de Santa Justa. Es un destino ideal para disfrutar de la cultura, la historia y la belleza arquitectónica.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Lisboa",
+    "category": "Portugal",
+    "thumbnail": "https://th.bing.com/th/id/OIP.rndZSfuTqBo19QN4AH8b9gHaE7?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Oporto",
+    "description": "Oporto, también conocida como Porto, es una ciudad encantadora en el norte de Portugal. Famosa por su vino de Oporto, ofrece lugares emblemáticos como el Puente Dom Luís I, la Ribeira y la Torre de los Clérigos. La ciudad combina historia, cultura y una vibrante vida urbana, siendo un destino ideal para disfrutar de la gastronomía, el arte y la belleza arquitectónica.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Oporto",
+    "category": "Portugal",
+    "thumbnail": "https://www.shoreexcursionsgroup.com/img/tour/EULEOPORTO-2.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Algarve",
+    "description": "Algarve, situada en el sur de Portugal, es una región conocida por sus impresionantes playas, acantilados y pintorescos pueblos costeros. Destacan lugares como Lagos, Albufeira y la Cueva de Benagil. Es un destino ideal para disfrutar del sol, el mar y actividades al aire libre como el senderismo y el golf. El Algarve combina belleza natural con una rica oferta turística y gastronómica.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Algarve",
+    "category": "Portugal",
+    "thumbnail": "https://img5.goodfon.ru/wallpaper/nbig/8/ac/portugaliia-algarve-priroda-peizazh-okean-skaly-algarve-bere.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Paris",
+    "description": "París, la capital de Francia, es una ciudad icónica conocida por su arte, cultura y arquitectura. Destacan monumentos como la Torre Eiffel, el Museo del Louvre y la Catedral de Notre-Dame. París es famosa por sus cafés, su gastronomía y sus encantadoras calles. Es un destino ideal para disfrutar de la historia, el arte y el romance.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Paris",
+    "category": "Francia",
+    "thumbnail": "https://etias.com/assets/uploads/8%20Things%20To%20Do%20in%20Paris,%20France.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Provenza",
+    "description": "Provenza, ubicada en el sureste de Francia, es una región famosa por sus campos de lavanda, pintorescos pueblos y paisajes mediterráneos. Destacan lugares como Aix-en-Provence, Avignon y el Parque Nacional de las Calanques. Es un destino ideal para disfrutar de la naturaleza, la gastronomía y la rica historia cultural de la región.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Provenza",
+    "category": "Francia",
+    "thumbnail": "https://th.bing.com/th/id/OIP.GduumqqNbc8dgkl3Zk2NhQHaFj?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Costa Azul",
+    "description": "Costa Azul, también conocida como la Riviera Francesa, es una región costera en el sureste de Francia. Famosa por sus playas glamorosas, ofrece destinos icónicos como Niza, Cannes y Mónaco. La Costa Azul es conocida por su clima mediterráneo, su vida nocturna y sus eventos de renombre como el Festival de Cine de Cannes. Es un destino ideal para disfrutar del lujo, la belleza natural y la cultura.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Costa Azul",
+    "category": "Francia",
+    "thumbnail": "https://th.bing.com/th/id/OIP.nGy9ctAxdChbkI6Cjh1rnQHaE8?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Atenas",
+    "description": "Atenas, la capital de Grecia, es una ciudad rica en historia y cultura. Conocida como la cuna de la civilización occidental, ofrece monumentos icónicos como la Acrópolis, el Partenón y el Ágora Antigua. Atenas combina su herencia antigua con una vibrante vida moderna, incluyendo museos, plazas y una deliciosa gastronomía. Es un destino ideal para explorar la historia, el arte y la cultura griega.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Atenas",
+    "category": "Grecia",
+    "thumbnail": "https://th.bing.com/th/id/R.9d6a2f86dcf02ac312e1c3ff4bf89ff1?rik=OV5gNsz6fynvmA&pid=ImgRaw&r=0",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Santorini",
+    "description": "Santorini, una isla en el mar Egeo, es famosa por sus impresionantes vistas, casas blancas con techos azules y puestas de sol espectaculares. Destacan lugares como Oia, Fira y las playas de arena negra. Santorini es un destino ideal para disfrutar de la belleza natural, la historia y la cultura griega.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Santorini",
+    "category": "Grecia",
+    "thumbnail": "https://a.cdn-hotels.com/gdcs/production18/d1838/041ae6b1-0a88-4c22-a648-53a22dd4a006.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Creta",
+    "description": "Creta, la isla más grande de Grecia, es conocida por su rica historia, sus playas impresionantes y sus paisajes montañosos. Destacan lugares como el Palacio de Knossos, las Gargantas de Samaria y las playas de Elafonisi y Balos. Creta ofrece una mezcla única de cultura, naturaleza y gastronomía, siendo un destino ideal para explorar la historia y la belleza natural de Grecia.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Creta",
+    "category": "Grecia",
+    "thumbnail": "https://www.youknowboat.com/wp-content/uploads/2021/05/Rethymno-city-at-Crete-island-in-Greece.-The-old-venetian-harbor.jpeg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Parque Nacional Manuel Antonio",
+    "description": "arque Nacional Manuel Antonio, ubicado en la costa del Pacífico de Costa Rica, es uno de los destinos más populares del país. Conocido por sus playas de arena blanca, selvas tropicales y abundante vida silvestre, ofrece una experiencia única de naturaleza y aventura. Destacan lugares como Playa Manuel Antonio, Playa Espadilla y los senderos que permiten observar monos, perezosos y una gran variedad de aves.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Parque Nacional Manuel Antonio",
+    "category": "Costa Rica",
+    "thumbnail": "https://www.mustseespots.com/costa-rica/img/parque-nacional-manuel-antonio.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Monteverde",
+    "description": "Monteverde, ubicado en la región montañosa de Costa Rica, es famoso por su exuberante bosque nuboso y su biodiversidad. Destacan la Reserva Biológica Bosque Nuboso Monteverde y la Reserva Santa Elena, ideales para el senderismo y la observación de aves. Monteverde es un destino perfecto para los amantes de la naturaleza y el ecoturismo, ofreciendo una experiencia única de belleza natural y tranquilidad.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Montoverde",
+    "category": "Costa Rica",
+    "thumbnail": "https://th.bing.com/th/id/R.1d19aea6bf37781d015f54d922a14fbb?rik=LPJtCZZX%2bTp3jQ&pid=ImgRaw&r=0",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Arenal",
+    "description": "Arenal, ubicado en Costa Rica, es famoso por su majestuoso volcán y su impresionante entorno natural. El Volcán Arenal es uno de los volcanes más activos del mundo y ofrece vistas espectaculares. La región también cuenta con el Lago Arenal, aguas termales y una rica biodiversidad. Es un destino ideal para el ecoturismo, el senderismo y la relajación en un entorno natural impresionante.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Arenal",
+    "category": "Costa Rica",
+    "thumbnail": "https://www.horizontes.com/wp-content/uploads/2023/04/Thumbnail-51-1024x768.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Nueva York",
+    "description": "Nueva York, también conocida como la Gran Manzana, es una de las ciudades más icónicas del mundo. Conocida por sus rascacielos, ofrece lugares emblemáticos como el Empire State Building, la Estatua de la Libertad y Central Park. La ciudad es famosa por su vibrante vida cultural, sus museos como el Metropolitan Museum of Art y el MoMA, y su animada vida nocturna.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Nueva York",
+    "category": "Estados Unidos",
+    "thumbnail": "https://vuelaalavida.com/wp-content/uploads/2023/05/Nueva-York.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Parque Nacional del Gran Cañon",
+    "description": "Parque Nacional del Gran Cañón, ubicado en Arizona, Estados Unidos, es una de las maravillas naturales más impresionantes del mundo. Conocido por sus vistas espectaculares y su geología única, el Gran Cañón ofrece actividades como senderismo, rafting y observación de la vida silvestre",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Parque Nacional del Gran Cañon",
+    "category": "Estados Unidos",
+    "thumbnail": "https://www.civitatis.com/f/estados-unidos/las-vegas/guia/gran-canon-m.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Los Angeles",
+    "description": "Los Ángeles, ubicada en la costa oeste de Estados Unidos, es una ciudad vibrante y diversa. Conocida por ser el hogar de Hollywood, ofrece lugares emblemáticos como el Paseo de la Fama, el Observatorio Griffith y las playas de Santa Mónica y Venice Beach.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Los Angeles",
+    "category": "Estados Unidos",
+    "thumbnail": "https://th.bing.com/th/id/R.51206b14ee685f1f7c035f1ffb8ac49c?rik=9A%2bfNv2YSiDGfg&riu=http%3a%2f%2fwww.tripcentral.ca%2fblog%2fwp-content%2fuploads%2f2016%2f02%2fLos-Angeles-downtown.jpg&ehk=t0itigGq1IsZNNHoULz9Bdc3VFHNEmWpVhATmUa0KrM%3d&risl=1&pid=ImgRaw&r=0",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Tokio",
+    "description": "Tokio, la capital de Japón, es una metrópolis vibrante y futurista. Conocida por su mezcla de tradición y modernidad, ofrece lugares emblemáticos como la Torre de Tokio, el Templo Sensoji y el Barrio de Shibuya. Tokio es famosa por su tecnología avanzada, su gastronomía y su vida nocturna.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Tokio",
+    "category": "Japon",
+    "thumbnail": "https://cdn.kufura.jp/wp-content/uploads/2023/12/AdobeStock_305474975-1440x960.jpeg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Kioto",
+    "description": "Kioto, situada en la región de Kansai en Japón, es una ciudad conocida por sus templos históricos, jardines y palacios imperiales. Destacan lugares como el Templo Kinkaku-ji (Pabellón Dorado), el Templo Fushimi Inari-taisha con sus miles de torii rojos, y el Bosque de Bambú de Arashiyama. Kioto es un destino ideal para explorar la cultura tradicional japonesa, disfrutar de la belleza natural y sumergirse en la historia.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Kioto",
+    "category": "Japon",
+    "thumbnail": "https://mejortour.com/wp-content/uploads/2020/12/22287-1.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Osaka",
+    "description": "Osaka, situada en la región de Kansai en Japón, es una ciudad vibrante conocida por su modernidad y su rica historia. Destacan lugares como el Castillo de Osaka, el Distrito de Dotonbori con sus luces de neón y su animada vida nocturna, y el Acuario Kaiyukan, uno de los más grandes del mundo. Osaka es famosa por su deliciosa comida callejera, incluyendo el takoyaki y el okonomiyaki.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Osaka",
+    "category": "Japon",
+    "thumbnail": "https://jw-webmagazine.com/wp-content/uploads/2023/02/Osaka-Castle-with-cherry-blossoms.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Ciudad del Cabo",
+    "description": "Ciudad del Cabo, ubicada en la punta suroeste de Sudáfrica, es una ciudad conocida por su impresionante belleza natural y su rica historia. Destacan lugares como la Montaña de la Mesa, el Cabo de Buena Esperanza y la Isla Robben, donde Nelson Mandela estuvo encarcelado. Ciudad del Cabo ofrece una mezcla única de paisajes costeros, viñedos y una vibrante vida urbana.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Ciudad del cabo",
+    "category": "Sudafrica",
+    "thumbnail": "https://th.bing.com/th/id/OIP.92oqWQp-zYVXIVI_aIuOowHaDg?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Parque Nacional Kruger",
+    "description": "Parque Nacional Kruger, ubicado en el noreste de Sudáfrica, es una de las reservas de caza más grandes y famosas de África. Conocido por su increíble biodiversidad, ofrece la oportunidad de ver los `Cinco Grandes` (león, leopardo, rinoceronte, elefante y búfalo) en su hábitat natural. El parque cuenta con una extensa red de caminos y alojamientos que permiten a los visitantes explorar su vasta extensión.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Parque Nacional del Kruger",
+    "category": "Sudafrica",
+    "thumbnail": "https://images.ctfassets.net/bth3mlrehms2/7gdtpRktSDBtGUYzqOkzk4/8a151b2372ccca8a7ab9054b338b5f7a/S__dafrika__Kr__ger-Nationalpark.jpg?w=2121&h=1193&fl=progressive&q=50&fm=jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Johannesburgo",
+    "description": "Johannesburgo, la ciudad más grande de Sudáfrica, es conocida por su rica historia y su papel en la lucha contra el apartheid. Destacan lugares como el Museo del Apartheid, el Constitution Hill y el Parque de los Leones. La ciudad también ofrece una vibrante vida cultural y artística, con barrios como Maboneng y Newtown. Johannesburgo es un destino ideal para explorar la historia, la cultura y la modernidad de Sudáfrica.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Johannesburgo",
+    "category": "Sudafrica",
+    "thumbnail": "https://th.bing.com/th/id/OIP.CG30MlBt7iWBePcSEXZZNgHaDY?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Estambul",
+    "description": "Estambul, situada en Turquía, es una ciudad fascinante que une Europa y Asia. Conocida por su rica historia y su vibrante cultura, ofrece lugares emblemáticos como la Basílica de Santa Sofía, la Mezquita Azul y el Palacio de Topkapi. Estambul es famosa por sus bazares, como el Gran Bazar y el Bazar de las Especias, y su deliciosa gastronomía.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Estambul",
+    "category": "Turquia",
+    "thumbnail": "https://a.cdn-hotels.com/gdcs/production176/d535/3e8ae0b0-7acb-4041-887f-5e085ecb1a0e.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Capadocia",
+    "description": "Capadocia, situada en el centro de Turquía, es una región famosa por sus paisajes únicos y sus formaciones rocosas conocidas como `chimeneas de hadas. Destacan lugares como Göreme, Uchisar y las ciudades subterráneas de Derinkuyu y Kaymakli. Capadocia es conocida por sus paseos en globo aerostático, que ofrecen vistas espectaculares del paisaje. Es un destino ideal para explorar la historia, la naturaleza y la cultura de Turquía`.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Capadocia",
+    "category": "Turquia",
+    "thumbnail": "https://planesturisticos.com/c/u/2020/02/capadocia-1200x754.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Pamukkale",
+    "description": "Pamukkale, situada en el suroeste de Turquía, es famosa por sus terrazas de travertino blanco y sus aguas termales ricas en minerales. Este impresionante paisaje natural, conocido como el `Castillo de Algodón`, es un sitio del Patrimonio Mundial de la UNESCO. Además de las terrazas, Pamukkale alberga las ruinas de la antigua ciudad de Hierápolis, que incluye un teatro romano y baños termales históricos.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Pamukkale",
+    "category": "Turquia",
+    "thumbnail": "https://th.bing.com/th/id/R.e309aab6a5bc1f51126e1b675996cb76?rik=QsTUBwqGWwVdEg&riu=http%3a%2f%2fwww.luxevacationtour.com.tr%2fwp-content%2fuploads%2f2018%2f04%2fpamukkale.jpg&ehk=ratU3ggL6TpcxF0SLju%2f5YN7E3MBBs60jZKfrQIex0Y%3d&risl=&pid=ImgRaw&r=0",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Sidney",
+    "description": "Sídney, ubicada en la costa sureste de Australia, es una ciudad vibrante y cosmopolita. Conocida por su icónica Ópera de Sídney y el Puente de la Bahía de Sídney, ofrece una mezcla única de playas, parques y vida urbana. Destacan lugares como Bondi Beach, el Jardín Botánico Real y el Distrito de The Rocks. Sídney es famosa por su clima soleado, su escena cultural y su diversidad",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Sidney",
+    "category": "Australia",
+    "thumbnail": "https://www.civitatis.com/blog/wp-content/uploads/2018/01/vista-opera-house-sidney.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Gran Barrera de Coral",
+    "description": "Gran Barrera de Coral, situada frente a la costa de Queensland, Australia, es el sistema de arrecifes de coral más grande del mundo. Conocida por su increíble biodiversidad, ofrece oportunidades para el buceo y el snorkel en un entorno marino espectacular. Destacan lugares como Cairns, Port Douglas y las Islas Whitsunday.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Gran Barrera de Coral",
+    "category": "Australia",
+    "thumbnail": "https://img.freepik.com/fotos-premium/gran-barrera-coral-australia-gran-barrera-coral-es-impresionante-ecosistema-marino-ubicado-frente_939678-2.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Melbourne",
+    "description": "Melbourne, situada en la costa sureste de Australia, es una ciudad conocida por su cultura vibrante y su diversidad. Destacan lugares como la Plaza Federation, el Jardín Botánico Real y el Mercado Queen Victoria. Melbourne es famosa por su escena artística, sus eventos deportivos y su deliciosa gastronomía.",
+    "price": 300,
+    "discountPercentage": 10.99,
+    "rating": 4.7,
+    "stock": 105,
+    "brand": "Melbourne",
+    "category": "Australia",
+    "thumbnail": "https://th.bing.com/th/id/OIP.UZJet9X80tsvR1Exm_N0JAHaE8?rs=1&pid=ImgDetMain",
+    "images": [
+      "https://i.dummyjson.com/data/products/15/1.jpg",
+      "https://i.dummyjson.com/data/products/15/2.jpg",
+      "https://i.dummyjson.com/data/products/15/3.jpg",
+      "https://i.dummyjson.com/data/products/15/4.jpg",
+      "https://i.dummyjson.com/data/products/15/thumbnail.jpg"
+    ]
+  }
+]
