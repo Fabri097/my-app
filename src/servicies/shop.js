@@ -1,17 +1,17 @@
-import { base_url } from "../database";
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { base_url } from "../database"
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 
-export const shopApi = createApi ({
+export const shopApi = createApi({
     reducerPath:"shopApi",
     baseQuery:fetchBaseQuery({baseUrl:base_url}),
     endpoints:(builder)=> ({
         getProducts:builder.query({
-            query:() =>"products.json"
+            query:() => "products.json"
         }),
         getCategories:builder.query({
-            query:() =>"categories.json"
+            query:() =>  "categories.json"
         }),
     })
 })
 
-export const { useGetProductsQuery, useGetCategoriesQuery } = shopApi
+export const { useGetProductsQuery ,useGetCategoriesQuery  } = shopApi

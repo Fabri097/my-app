@@ -5,6 +5,9 @@ import { colors } from "./src/globals/colors"
 import Navigator from "./src/navigation/Navigator"
 import { Provider } from "react-redux"
 import store from "./src/store"
+import Login from "./src/screens/Login"
+import Signup from "./src/screens/Signup"
+import MyProfile from "./src/screens/MyProfile"
 
 export default function App() {
   

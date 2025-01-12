@@ -9,7 +9,7 @@ const Categories = () => {
   if(isLoading) return <View><Text>cargando</Text></View>
   if(isError) return <View><Text>{error.message}</Text></View>
 
- console.log("categorias:", categories)
+ 
   
   return (
     <FlatList
