@@ -7,6 +7,7 @@ import { useSignUpMutation } from "../servicies/auth";
 import { useDispatch } from "react-redux";
 import { setUser } from "../features/userSlice";
 import { signupSchema } from "../validations/signupSchema";
+
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

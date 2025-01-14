@@ -3,7 +3,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { colors } from "../globals/colors";
 
 const CardOrder = ({ order }) => {
-  const date = new Date(order.createdAt).toLocaleString(); // Corregido aquí
+  const date = new Date(order.createdAt).toLocaleString(); 
 
   return (
     <View style={styles.container}>
