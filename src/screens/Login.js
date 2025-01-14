@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, Text, StyleSheet, Pressable } from "react-native";
+import { View, Text, StyleSheet, Pressable, TextInput, TouchableOpacity, Alert } from "react-native";
+import { Ionicons } from '@expo/vector-icons'; 
 import InputForm from "../components/InputForm";
 import SubmitButton from "../components/SubmitButton";
 import { useNavigation } from "@react-navigation/native";
@@ -13,6 +14,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const navigation = useNavigation();
   const [triggerLogin] = useLoginMutation();
   const dispatch = useDispatch();
@@ -25,20 +27,39 @@ const Login = () => {
         email: response.data.email,
         idToken: response.data.idToken,
         localId: response.data.localId
-      }
+      };
       dispatch(setUser(user));
     } catch (error) {
       switch (error.path) {
         case "email":
           setEmailError(error.message);
           setPasswordError("");
+          Alert.alert(
+            'Error',
+            error.message,
+            [{ text: 'OK' }]
+          );
           break;
         case "password":
           setPasswordError(error.message);
           setEmailError("");
+          Alert.alert(
+            'Error',
+            error.message,
+            [{ text: 'OK' }]
+          );
+          break;
+        default:
+          Alert.alert(
+            'Error',
+            'Email o contraseña incorrectos. Por favor, inténtalo de nuevo.',
+            [{ text: 'OK' }]
+          );
+          setEmailError("");
+          setPasswordError("");
           break;
       }
-    } 
+    }
   };
 
   return (
@@ -52,13 +73,19 @@ const Login = () => {
           isSecure={false}
           error={emailError}
         />
-        <InputForm
-          label="Password"
-          value={password}
-          onChangeText={(t) => setPassword(t)}
-          isSecure={true}
-          error={passwordError}
-        />
+        <View style={styles.passwordContainer}>
+          <TextInput
+            style={styles.input}
+            value={password}
+            onChangeText={(t) => setPassword(t)}
+            secureTextEntry={!isPasswordVisible}
+            placeholder="Password"
+          />
+          <TouchableOpacity onPress={() => setIsPasswordVisible(!isPasswordVisible)}>
+            <Ionicons name={isPasswordVisible ? "eye-off" : "eye"} size={24} color="black" />
+          </TouchableOpacity>
+        </View>
+        {passwordError ? <Text style={styles.error}>{passwordError}</Text> : null}
         <SubmitButton onPress={onSubmit} title="Ingresar" />
         <Text style={styles.sub}>¿No tienes una cuenta?</Text>
         <Pressable onPress={() => navigation.navigate("Signup")}>
@@ -69,42 +96,59 @@ const Login = () => {
   );
 };
 
-export default Login;
-
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#f0f8ff",
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f0f8ff', 
   },
   container: {
-    width: "80%",
-    padding: 20,
-    backgroundColor: "#fff",
+    width: '90%',
+    backgroundColor: '#fff',
     borderRadius: 10,
-    shadowColor: "#000",
+    padding: 20,
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 2,
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
   title: {
-    fontSize: 24,
-    fontWeight: "bold",
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#333',
     marginBottom: 20,
-    textAlign: "center",
+    textAlign: 'center',
+  },
+  passwordContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    marginBottom: 20,
+  },
+  input: {
+    flex: 1,
+    height: 40,
+    padding: 10,
+  },
+  error: {
+    color: 'red',
+    marginBottom: 10,
   },
   sub: {
-    fontSize: 16,
-    color: "#666",
     marginTop: 20,
-    textAlign: "center",
+    textAlign: 'center',
+    color: '#666',
   },
   subLink: {
-    fontSize: 16,
-    color: "#007bff",
+    color: '#1e90ff',
+    textAlign: 'center',
     marginTop: 10,
-    textAlign: "center",
   },
 });
+
+export default Login;

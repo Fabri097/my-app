@@ -5,11 +5,10 @@ import {
   View,
   Image,
   Pressable,
-  Button,
   ScrollView,
 } from "react-native";
-import DateTimePickerModal from "react-native-modal-datetime-picker";
-
+import DatePicker from "../components/DatePicker";
+import PassengerCounter from "../components/PassangerCounter";
 const ProductDetail = ({ route }) => {
   const { product } = route.params;
   const [passengers, setPassengers] = useState(1);
@@ -18,38 +17,6 @@ const ProductDetail = ({ route }) => {
   const [isStartDatePickerVisible, setStartDatePickerVisibility] =
     useState(false);
   const [isEndDatePickerVisible, setEndDatePickerVisibility] = useState(false);
-
-  const incrementPassengers = () => setPassengers(passengers + 1);
-  const decrementPassengers = () => {
-    if (passengers > 1) setPassengers(passengers - 1);
-  };
-
-  const showStartDatePicker = () => {
-    setStartDatePickerVisibility(true);
-  };
-
-  const hideStartDatePicker = () => {
-    setStartDatePickerVisibility(false);
-  };
-
-  const handleStartDateConfirm = (date) => {
-    setStartDate(date);
-    hideStartDatePicker();
-  };
-
-  const showEndDatePicker = () => {
-    setEndDatePickerVisibility(true);
-  };
-
-  const hideEndDatePicker = () => {
-    setEndDatePickerVisibility(false);
-  };
-
-  const handleEndDateConfirm = (date) => {
-    setEndDate(date);
-    hideEndDatePicker();
-  };
-
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -64,37 +31,44 @@ const ProductDetail = ({ route }) => {
 
         <View style={styles.counterContainer}>
           <Text style={styles.counterLabel}>Pasajeros:</Text>
-          <View style={styles.counter}>
-            <Button title="-" onPress={decrementPassengers} />
-            <Text style={styles.counterText}>{passengers}</Text>
-            <Button title="+" onPress={incrementPassengers} />
+          <PassengerCounter
+            passengers={passengers}
+            increment={() => {
+              if (passengers < 10) setPassengers(passengers + 1);
+            }}
+            decrement={() => {
+              if (passengers > 1) setPassengers(passengers - 1);
+            }}
+          />
+        </View>
+
+        <View style={styles.dates}>
+          <View style={styles.datePickerContainer}>
+            <Text style={styles.datePickerLabel}>Fecha de inicio:</Text>
+            <Pressable onPress={() => setStartDatePickerVisibility(true)}>
+              <Text style={styles.dateText}>{startDate.toDateString()}</Text>
+            </Pressable>
+            <DatePicker
+              date={startDate}
+              setDate={setStartDate}
+              isVisible={isStartDatePickerVisible}
+              showPicker={() => setStartDatePickerVisibility(true)}
+              hidePicker={() => setStartDatePickerVisibility(false)}
+            />
           </View>
-        </View>
-
-        <View style={styles.datePickerContainer}>
-          <Text style={styles.datePickerLabel}>Fecha de inicio:</Text>
-          <Pressable onPress={showStartDatePicker}>
-            <Text style={styles.dateText}>{startDate.toDateString()}</Text>
-          </Pressable>
-          <DateTimePickerModal
-            isVisible={isStartDatePickerVisible}
-            mode="date"
-            onConfirm={handleStartDateConfirm}
-            onCancel={hideStartDatePicker}
-          />
-        </View>
-
-        <View style={styles.datePickerContainer}>
-          <Text style={styles.datePickerLabel}>Fecha de fin:</Text>
-          <Pressable onPress={showEndDatePicker}>
-            <Text style={styles.dateText}>{endDate.toDateString()}</Text>
-          </Pressable>
-          <DateTimePickerModal
-            isVisible={isEndDatePickerVisible}
-            mode="date"
-            onConfirm={handleEndDateConfirm}
-            onCancel={hideEndDatePicker}
-          />
+          <View style={styles.datePickerContainer}>
+            <Text style={styles.datePickerLabel}>Fecha de fin:</Text>
+            <Pressable onPress={() => setEndDatePickerVisibility(true)}>
+              <Text style={styles.dateText}>{endDate.toDateString()}</Text>
+            </Pressable>
+            <DatePicker
+              date={endDate}
+              setDate={setEndDate}
+              isVisible={isEndDatePickerVisible}
+              showPicker={() => setEndDatePickerVisibility(true)}
+              hidePicker={() => setEndDatePickerVisibility(false)}
+            />
+          </View>
         </View>
 
         <Pressable style={styles.button}>
@@ -104,79 +78,80 @@ const ProductDetail = ({ route }) => {
     </ScrollView>
   );
 };
-
 export default ProductDetail;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    padding: 10,
-    backgroundColor: "#F0F8FF", 
+    padding: 20,
+    backgroundColor: "#f8f8f8",
   },
   image: {
     width: "100%",
-    height: 300,
-    marginBottom: 10,
-    borderRadius: 20,
+    height: 250,
+    borderRadius: 10,
+    marginBottom: 20,
   },
   title: {
-    fontSize: 28,
+    fontSize: 26,
     fontWeight: "bold",
-    color: "#2E8B57",
-    marginBottom: 10,
-    textAlign: "center",
+    marginVertical: 10,
+    color: "#333",
   },
   description: {
-    fontSize: 18,
-    color: "#696969", 
-    marginBottom: 20,
-    textAlign: "justify",
+    fontSize: 16,
+    marginVertical: 10,
+    color: "#666",
   },
   price: {
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: "bold",
-    color: "#FF6347", // Rojo tomate para resaltar el precio
-    marginBottom: 20,
-    textAlign: "center",
+    marginVertical: 10,
+    color: "#e91e63",
   },
   counterContainer: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 20,
+    marginRight: 20,
+    marginVertical: 20,
   },
   counterLabel: {
-    fontSize: 18,
+    fontSize: 16,
+    fontWeight: "bold",
     color: "#333",
-    marginRight: 10,
   },
-  counter: {
+  datePickersContainer: {
     flexDirection: "row",
-    alignItems: "center",
-  },
-  counterText: {
-    fontSize: 18,
-    marginHorizontal: 10,
+    justifyContent: "space-between",
+    marginVertical: 10,
   },
   datePickerContainer: {
-    marginBottom: 20,
+    flex: 1,
+    alignItems: "center",
+    marginVertical: 10,
   },
   datePickerLabel: {
-    fontSize: 18,
-    color: "#333",
+    fontSize: 16,
+    fontWeight: "bold",
     marginBottom: 5,
+    color: "#333",
   },
   dateText: {
-    fontSize: 18,
+    fontSize: 16,
+    marginTop: 10,
     color: "#333",
   },
+  dates:{
+   flexDirection:"row"
+  },
   button: {
-    backgroundColor: "#4682B4", // Azul acero para el botón
+    backgroundColor: "#4CAF50",
     padding: 15,
-    borderRadius: 5,
     alignItems: "center",
+    marginVertical: 20,
+    borderRadius: 10,
   },
   textButton: {
-    color: "#FFFFFF", // Texto blanco para el botón
+    color: "#fff",
     fontSize: 18,
     fontWeight: "bold",
   },

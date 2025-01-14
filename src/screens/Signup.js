@@ -7,7 +7,6 @@ import { useSignUpMutation } from "../servicies/auth";
 import { useDispatch } from "react-redux";
 import { setUser } from "../features/userSlice";
 import { signupSchema } from "../validations/signupSchema";
-
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,7 +17,6 @@ const Signup = () => {
   const navigation = useNavigation();
   const [triggerSignup] = useSignUpMutation();
   const dispatch = useDispatch();
-
   const onSubmit = async () => {
     try {
       signupSchema.validateSync({ email, password, confirmPassword });
@@ -26,7 +24,7 @@ const Signup = () => {
       const user = {
         email: response.data.email,
         idToken: response.data.idToken,
-        localId: response.data.localId
+        localId: response.data.localId,
       };
       dispatch(setUser(user));
     } catch (error) {
@@ -49,42 +47,43 @@ const Signup = () => {
       }
     }
   };
-
   return (
     <View style={styles.main}>
+      {" "}
       <View style={styles.container}>
-        <Text style={styles.title}>Registrarme</Text>
+        {" "}
+        <Text style={styles.title}>Registrarme</Text>{" "}
         <InputForm
           label="Email"
           value={email}
           onChangeText={(t) => setEmail(t)}
           isSecure={false}
           error={emailError}
-        />
+        />{" "}
         <InputForm
           label="Password"
           value={password}
           onChangeText={(t) => setPassword(t)}
           isSecure={true}
           error={passwordError}
-        />
+        />{" "}
         <InputForm
           label="Confirmar password"
           value={confirmPassword}
           onChangeText={(t) => setConfirmPassword(t)}
           isSecure={true}
           error={confirmPasswordError}
-        />
-        <SubmitButton title="Registrarme" onPress={onSubmit} />
-        <Text style={styles.sub}>¿Tienes cuenta registrada?</Text>
+        />{" "}
+        <SubmitButton title="Registrarme" onPress={onSubmit} />{" "}
+        <Text style={styles.sub}>¿Tienes cuenta registrada?</Text>{" "}
         <Pressable onPress={() => navigation.navigate("Login")}>
-          <Text style={styles.subLink}>Login</Text>
-        </Pressable>
-      </View>
+          {" "}
+          <Text style={styles.subLink}>Login</Text>{" "}
+        </Pressable>{" "}
+      </View>{" "}
     </View>
   );
 };
-
 export default Signup;
 
 const styles = StyleSheet.create({
@@ -92,7 +91,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f0f8ff",
+    backgroundColor: "#f8f8f8",
   },
   container: {
     width: "80%",
@@ -101,26 +100,30 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 2,
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
+    color: "#333",
+    textAlign: "center",
+  },
+  errorText: {
+    color: "#e74c3c",
+    marginBottom: 10,
     textAlign: "center",
   },
   sub: {
-    fontSize: 16,
-    color: "#666",
     marginTop: 20,
     textAlign: "center",
+    color: "#666",
   },
   subLink: {
-    fontSize: 16,
-    color: "#007bff",
-    marginTop: 10,
+    color: "#3498db",
     textAlign: "center",
+    marginTop: 5,
   },
 });
