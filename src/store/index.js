@@ -1,13 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from '../features/counterSlice';
 import shopReducer from '../features/shopSlice';
-import { shopApi } from "../servicies/shop"; 
-import { ordersApi } from "../servicies/orders"; 
+import { shopApi } from "../services/shop"; 
+import { ordersApi } from "../services/orders"; 
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { authApi } from "../servicies/auth";
+import { authApi } from "../services/auth";
 import userReducer from "../features/userSlice";
-import { userApi } from "../servicies/user";
-import {cartApi}  from "../servicies/cart"
+import { userApi } from "../services/user";
+import {cartApi}  from "../services/cart"
 
 const store = configureStore({
   reducer: {

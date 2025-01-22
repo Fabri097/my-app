@@ -1,4 +1,4 @@
-import { object, string, ref } from "yup";
+import { object,string,ref } from 'yup'
 
 export const signupSchema = object({
     confirmPassword:string()

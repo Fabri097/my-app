@@ -1,11 +1,13 @@
-import { StyleSheet, Text, View, Pressable} from "react-native";
-import { colors } from "../globals/colors";
-import ArrowGoBack from "./ArrowGoBack";
-import { useNavigation } from "@react-navigation/native";
-import { AntDesign } from "@expo/vector-icons";
-import {deleteUser} from "../features/userSlice"
-import { useDispatch } from "react-redux";
-import {deleteSesion} from "../config/dbSqlite"
+import {Pressable, StyleSheet, Text, View } from 'react-native'
+import { colors } from '../globals/colors'
+import ArrowGoBack from './ArrowGoBack'
+import { useNavigation } from '@react-navigation/native'
+import AntDesign from '@expo/vector-icons/AntDesign';
+import { deleteUser } from '../features/userSlice';
+import { useDispatch } from 'react-redux';
+import { deleteSesion } from '../config/dbSqlite';
+
+
 
 const Header = ({title}) => {
 

@@ -1,12 +1,12 @@
-import { View, Text,  StyleSheet} from "react-native"
-import SubmitButton from "../components/SubmitButton"
-import MapPreview from "../components/MapPreview "
-import { useEffect, useState } from "react"
-import * as Location from "expo-location"
-import { googleapi } from "../googleApi"
-import { useSelector } from "react-redux"
-import { usePatchLocationMutation } from "../servicies/user"
-import { useNavigation } from "@react-navigation/native"
+import { StyleSheet, Text, View } from 'react-native'
+import SubmitButton from '../components/SubmitButton'
+import MapPreview from '../components/MapPreview '
+import { useEffect, useState } from 'react'
+import * as Location from 'expo-location'
+import { googleapi } from '../googleApi'
+import { useSelector } from 'react-redux'
+import { usePatchLocationMutation } from '../services/user'
+import { useNavigation } from '@react-navigation/native'
 
 const LocationSelector = () => {
 

@@ -1,15 +1,14 @@
 import { StyleSheet,FlatList,View,Text} from 'react-native'
 import CardItemCategory from './CardItemCategory'
-import { useGetCategoriesQuery} from "../servicies/shop"
+import { useGetCategoriesQuery} from '../services/shop'
+
 
 const Categories = () => {
 
-  const {data: categories,isError,error,isSuccess,isLoading} = useGetCategoriesQuery()
+  const {data:categories,isError,error,isSuccess,isLoading} = useGetCategoriesQuery()
 
   if(isLoading) return <View><Text>cargando</Text></View>
   if(isError) return <View><Text>{error.message}</Text></View>
-
- 
   
   return (
     <FlatList
@@ -28,4 +27,3 @@ const styles = StyleSheet.create({
     paddingBottom:60
   }
 })
-

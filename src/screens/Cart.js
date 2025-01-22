@@ -1,74 +1,87 @@
-import { StyleSheet, Text, View, FlatList, Pressable } from "react-native";
-import CardCartProduct from "../components/CardCartProduct";
-import { colors } from "../globals/colors";
-import { usePostOrdersMutation } from "../servicies/orders";
-import { useSelector } from "react-redux";
-import { useGetCartQuery } from "../servicies/cart";
-import { useEffect, useState } from "react";
+import { StyleSheet, Text, View,FlatList, Pressable } from 'react-native'
+import CardCartProduct from '../components/CardCartProduct'
+import { colors } from '../globals/colors'
+import { usePostOrdersMutation } from '../services/orders'
+import { useSelector } from 'react-redux'
+import { useGetCartQuery, useDeleteCartMutation } from '../services/cart'
+import { useEffect, useState } from 'react'
+import EmptyListComponent from '../components/EmptyListComponent'
+import LoadingSpinner from '../components/LoadingSpinner'
+import { useNavigation } from '@react-navigation/native'
 
 const Cart = () => {
-  const [triggerPost] = usePostOrdersMutation();
-  const localId = useSelector(state => state.user.localId);
-  const { data: cart } = useGetCartQuery({ localId });
-  const [total, setTotal] = useState(0);
+  const navigation = useNavigation()
+  const [triggerPost] = usePostOrdersMutation()
+  const [triggerDeleteCart] = useDeleteCartMutation()
+  const localId = useSelector(state => state.user.localId)
+  const {data:cart,isLoading} = useGetCartQuery({localId})
+  const [total,setTotal] = useState(0)
 
-  useEffect(() => {
-    if (cart) {
-      setTotal(cart.reduce((acc, item) => acc + item.price * item.quantity, 0));
+  useEffect(()=>{
+    if(cart){
+      setTotal(cart.reduce((acc,item) => acc + item.price * item.quantity ,0 ))
     }
-  }, [cart]);
+  },[cart])
 
-  const confirmCart = async () => {
-    try {
-      await triggerPost({ id: "2", products: [{ id: "2" }], total: 120 });
-    } catch (error) {
-      console.error("Error al confirmar el carrito:", error);
+
+
+  const confirmCart = () => {
+    const createdAt = new Date().toLocaleString()
+    const order = {
+      products:cart,
+      createdAt,
+      total
     }
-  };
-
+    triggerPost({order,localId})
+    triggerDeleteCart({localId})
+    navigation.navigate("OrdersStack")
+  }
+  if(isLoading) return <LoadingSpinner/>
+  if(!cart) return <EmptyListComponent message="No hay productos en el carrito"/>
   return (
     <View style={styles.container}>
       <FlatList
         data={cart}
         keyExtractor={item => item.id}
-        renderItem={({ item }) => <CardCartProduct product={item} />}
+        renderItem={({item}) => <CardCartProduct product = {item}/>}
       />
       <View style={styles.containerTotal}>
-        <Text style={styles.text}>Total: {total} $ ARG</Text>
+        <Text style={styles.text}>Total: {total} $ ARG </Text>
         <Pressable style={styles.button} onPress={confirmCart}>
-          <Text style={styles.buttonText}>Finalizar Compra</Text>
+            <Text style={styles.buttonText}>Finalizar Compra</Text>
         </Pressable>
       </View>
     </View>
-  );
-};
+  )
+}
 
-export default Cart;
+export default Cart
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-  },
-  containerTotal: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingVertical: 20,
-  },
-  text: {
-    fontSize: 18,
-    fontWeight: "bold",
-  },
-  button: {
-    backgroundColor: colors.primary,
-    padding: 10,
-    borderRadius: 5,
-  },
-  buttonText: {
-    color: "white",
-    fontSize: 16,
-  },
-});
-
-
+    container:{
+        flex:1,
+        position:"relative"
+    },
+    containerTotal:{
+        width:"100%",
+        backgroundColor:colors.accent,
+        flexDirection:"row",
+        padding:15,
+        justifyContent:"space-around",
+        alignItems:"center",
+        position:"absolute",
+        bottom:0
+    },
+    text:{
+        color:colors.lightGray,
+        fontSize:16
+    },
+    button:{
+        backgroundColor:colors.primary,
+        padding:10,
+        borderRadius:5
+    },
+    buttonText:{
+        color:colors.lightGray
+    }
+})

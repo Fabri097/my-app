@@ -1,5 +1,5 @@
-import { base_url } from "../database";
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { base_url } from "../database"
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 
 export const cartApi = createApi({
     reducerPath:"cartApi",
@@ -9,6 +9,9 @@ export const cartApi = createApi({
         getCart:builder.query({
             query:({localId}) => `carts/${localId}.json`,
             transformResponse:(response) => {
+                if(!response){
+                    return null
+                }
                 const data = Object.entries(response).map(item => ({...item[1],id:item[0]}))
                 return data
             },
@@ -28,9 +31,20 @@ export const cartApi = createApi({
                 method:"DELETE",
             }),
             invalidatesTags:["deleteProduct"]
+        }),
+        deleteCart:builder.mutation({
+            query:({localId})=> ({
+                url:`carts/${localId}.json`,
+                method:"DELETE",
+            }),
+            invalidatesTags:["deleteProduct"]
         })
 
     })
 })
 
-export const { useGetCartQuery, usePostCartMutation, useDeleteCartProductMutation } = cartApi;
+export const { useGetCartQuery, 
+    usePostCartMutation,
+    useDeleteCartProductMutation,
+    useDeleteCartMutation
+} = cartApi
