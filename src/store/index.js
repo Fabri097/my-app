@@ -7,6 +7,7 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 import { authApi } from "../servicies/auth";
 import userReducer from "../features/userSlice";
 import { userApi } from "../servicies/user";
+import {cartApi}  from "../servicies/cart"
 
 const store = configureStore({
   reducer: {
@@ -17,9 +18,10 @@ const store = configureStore({
     [ordersApi.reducerPath]: ordersApi.reducer,
     [authApi.reducerPath]: authApi.reducer,
     [userApi.reducerPath]: userApi.reducer,
+    [cartApi.reducerPath]: cartApi.reducer,
   },
   middleware: (getDefaultMiddleware) => 
-    getDefaultMiddleware().concat(shopApi.middleware, ordersApi.middleware, authApi.middleware, userApi.middleware),
+    getDefaultMiddleware().concat(shopApi.middleware, ordersApi.middleware, authApi.middleware, userApi.middleware, cartApi.middleware),
 });
 
 setupListeners(store.dispatch);

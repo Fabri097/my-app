@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -7,16 +7,33 @@ import {
   Pressable,
   ScrollView,
 } from "react-native";
+import { usePostCartMutation } from "../servicies/cart";
+import { useSelector } from "react-redux";
+import { useNavigation } from "@react-navigation/native";
 import DatePicker from "../components/DatePicker";
 import PassengerCounter from "../components/PassangerCounter";
+
 const ProductDetail = ({ route }) => {
+  const navigation = useNavigation();
   const { product } = route.params;
+  const localId = useSelector((state) => state.user.localId);
+  const [triggerAddProduct] = usePostCartMutation();
   const [passengers, setPassengers] = useState(1);
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [isStartDatePickerVisible, setStartDatePickerVisibility] =
     useState(false);
   const [isEndDatePickerVisible, setEndDatePickerVisibility] = useState(false);
+
+  const handleAddproduct = async () => {
+    const cartProduct = { ...product, quantity: 1 };
+    try {
+      await triggerAddProduct({ localId, cartProduct });
+      navigation.navigate("CartStack");
+    } catch (error) {
+      console.error("Error al agregar el producto al carrito:", error);
+    }
+  };
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -27,8 +44,7 @@ const ProductDetail = ({ route }) => {
         />
         <Text style={styles.title}>{product.title}</Text>
         <Text style={styles.description}>{product.description}</Text>
-        <Text style={styles.price}>Precio: $ {product.price} </Text>
-
+        <Text style={styles.price}>Precio: $ {product.price}</Text>
         <View style={styles.counterContainer}>
           <Text style={styles.counterLabel}>Pasajeros:</Text>
           <PassengerCounter
@@ -37,49 +53,54 @@ const ProductDetail = ({ route }) => {
               if (passengers < 10) setPassengers(passengers + 1);
             }}
             decrement={() => {
-              if (passengers > 1) setPassengers(passengers - 1);
+              if (passengers > 1) setPassengers - 1;
             }}
           />
         </View>
-
         <View style={styles.dates}>
+          {" "}
           <View style={styles.datePickerContainer}>
-            <Text style={styles.datePickerLabel}>Fecha de inicio:</Text>
+            {" "}
+            <Text style={styles.datePickerLabel}>Fecha de inicio:</Text>{" "}
             <Pressable onPress={() => setStartDatePickerVisibility(true)}>
-              <Text style={styles.dateText}>{startDate.toDateString()}</Text>
-            </Pressable>
+              {" "}
+              <Text style={styles.dateText}>
+                {startDate.toDateString()}
+              </Text>{" "}
+            </Pressable>{" "}
             <DatePicker
               date={startDate}
               setDate={setStartDate}
               isVisible={isStartDatePickerVisible}
               showPicker={() => setStartDatePickerVisibility(true)}
               hidePicker={() => setStartDatePickerVisibility(false)}
-            />
-          </View>
+            />{" "}
+          </View>{" "}
           <View style={styles.datePickerContainer}>
-            <Text style={styles.datePickerLabel}>Fecha de fin:</Text>
+            {" "}
+            <Text style={styles.datePickerLabel}>Fecha de fin:</Text>{" "}
             <Pressable onPress={() => setEndDatePickerVisibility(true)}>
-              <Text style={styles.dateText}>{endDate.toDateString()}</Text>
-            </Pressable>
+              {" "}
+              <Text style={styles.dateText}>{endDate.toDateString()}</Text>{" "}
+            </Pressable>{" "}
             <DatePicker
               date={endDate}
               setDate={setEndDate}
               isVisible={isEndDatePickerVisible}
               showPicker={() => setEndDatePickerVisibility(true)}
               hidePicker={() => setEndDatePickerVisibility(false)}
-            />
-          </View>
-        </View>
-
-        <Pressable style={styles.button}>
-          <Text style={styles.textButton}>Agregar al carrito</Text>
-        </Pressable>
-      </View>
+            />{" "}
+          </View>{" "}
+        </View>{" "}
+        <Pressable style={styles.button} onPress={handleAddproduct}>
+          {" "}
+          <Text style={styles.textButton}>Agregar al carrito</Text>{" "}
+        </Pressable>{" "}
+      </View>{" "}
     </ScrollView>
   );
 };
 export default ProductDetail;
-
 const styles = StyleSheet.create({
   container: {
     padding: 20,
@@ -140,8 +161,8 @@ const styles = StyleSheet.create({
     marginTop: 10,
     color: "#333",
   },
-  dates:{
-   flexDirection:"row"
+  dates: {
+    flexDirection: "row",
   },
   button: {
     backgroundColor: "#4CAF50",

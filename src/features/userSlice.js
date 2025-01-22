@@ -13,10 +13,15 @@ export const userSlice = createSlice({
             state.email = actions.payload.email
             state.idToken = actions.payload.idToken
             state.localId = actions.payload.localId
+        },
+        deleteUser:(state) => {
+            state.email = ""
+            state.idToken = ""
+            state.localId = ""
         }
     }
 })
 
-export const { setUser } = userSlice.actions
+export const { setUser, deleteUser } = userSlice.actions
 
 export default userSlice.reducer
