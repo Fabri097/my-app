@@ -1,35 +1,37 @@
-import { Pressable, StyleSheet, Text, View} from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
 import { colors } from '../globals/colors';
 import { useDeleteCartProductMutation } from '../services/cart';
 import { useSelector } from 'react-redux';
 
-const CardCartProduct = ({product}) => {
-    const {category,title, rating, discountPercentage, price} = product
-    const localId = useSelector(state => state.user.localId)
-    const [triggerDeleteItemCart] = useDeleteCartProductMutation()
+const CardCartProduct = ({ product }) => {
+  const { category, title, rating, discountPercentage, price, quantity, departureDate, returnDate } = product;
+  const localId = useSelector(state => state.user.localId);
+  const [triggerDeleteItemCart] = useDeleteCartProductMutation();
 
-    const deleteCartProduct = () => {
-        triggerDeleteItemCart({localId,productId:product.id})
-    }
+  const deleteCartProduct = () => {
+    triggerDeleteItemCart({ localId, productId: product.id });
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.title}>{title}-{category}</Text>       
+        <Text style={styles.title}>{title} - {category}</Text>
         <Text style={styles.rating}>Rating: {rating} 🌟</Text>
-        <Text style ={styles.text}>Dto: $ {discountPercentage}</Text>
+        <Text style={styles.text}>Dto: $ {discountPercentage}</Text>
         <View style={styles.containerText}>
-            <Text style={styles.text}>Precio: $ {price}</Text>
-            <Text style={styles.text}>pasajeros: 1</Text>
+          <Text style={styles.text}>Precio: $ {price}</Text>
+          <Text style={styles.text}>Pasajeros: {quantity}</Text>
         </View>
+        {departureDate && <Text style={styles.text}>Fecha de Ida: {new Date(departureDate).toLocaleDateString()}</Text>}
+        {returnDate && <Text style={styles.text}>Fecha de Vuelta: {new Date(returnDate).toLocaleDateString()}</Text>}
       </View>
       <Pressable onPress={deleteCartProduct}>
-        <Entypo name="trash" size={30} color={colors.lightGray} style={styles.trashButton}/>
+        <Entypo name="trash" size={30} color={colors.lightGray} style={styles.trashButton} />
       </Pressable>
     </View>
-  )
-}
-
+  );
+};
 export default CardCartProduct
 
 const styles = StyleSheet.create({
