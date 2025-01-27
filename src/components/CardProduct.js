@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native'
 
 const CardProduct = ({product}) => {
 
-    const {title,price,stock,thumbnail} = product
+    const {title,price,stock,thumbnail,rating} = product
     const {width, height} = useWindowDimensions()
     const navigation = useNavigation()
 
@@ -15,8 +15,10 @@ const CardProduct = ({product}) => {
       <View>
         <Text style={styles.title}>{title}</Text>
         <View style={styles.containerText}>
-            <Text style={width > 400 ? styles.text : styles.textMin}>Precio: {price} $ </Text>
+            <Text style={width > 400 ? styles.text : styles.textMin}>Precio: $ {price}  </Text>
             <Text style={width > 400 ? styles.text : styles.textMin}>Stock: {stock}</Text>
+            <Text style={width > 400 ? styles.text : styles.textMin}>Rating: {rating} 🌟</Text>
+
         </View>
       </View>
     </Pressable>
@@ -26,40 +28,45 @@ const CardProduct = ({product}) => {
 export default CardProduct
 
 const styles = StyleSheet.create({
-    container:{
-        backgroundColor:colors.primary,
-        margin:10,
-        borderRadius:5,
-        padding:10,
-        flexDirection:"row",
-        gap:10,
-        alignItems:"center"
-    },
-    image:{
-        minWidth:50,
-        minHeight:50,
-        maxWidth:90,
-        maxHeight:90,
-        width:"15vw",
-        height:"15vw",
-        backgroundColor:"red"
-    },
-    title:{
-        color:colors.lightGray,
-        fontSize:14,
-        padding:5
-    },
-    containerText:{
-        flexDirection:"row",
-        gap:20,
-        padding:10
-    },
-    text:{
-       color:colors.lightGray,
-       fontSize:16
-    },
-    textMin:{
-      color:colors.lightGray,
-      fontSize:12
-    }
+  container: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 10,
+    marginBottom: 10,
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
+  },
+  image: {
+    width: 100,
+    height: 100,
+    borderRadius: 10,
+    marginRight: 10,
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#8B4513',
+    fontFamily: 'serif',
+    marginBottom: 5,
+  },
+  containerText: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
+  text: {
+    fontSize: 14,
+    color: '#8B4513',
+    fontFamily: 'serif',
+  },
+  textMin: {
+    fontSize: 12,
+    color: '#8B4513',
+    fontFamily: 'serif',
+  },
 })

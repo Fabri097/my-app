@@ -35,7 +35,7 @@ const Search = ({onChangeKeyword}) => {
           style={styles.input}
           value={textInput}
           onChangeText={(text)=>setTextInput(text)}
-          placeholderTextColor={colors.lightGray}
+          placeholderTextColor="black"
           placeholder='Buscar'/>
         <Pressable style={styles.button} onPress={search}>
           <FontAwesome name="search" size={30} color="black" />
@@ -52,29 +52,55 @@ const Search = ({onChangeKeyword}) => {
 export default Search
 
 const styles = StyleSheet.create({
-    container:{
-      paddingHorizontal:10,
-      paddingTop:15
-    },
-    containerInput:{
-      flexDirection:"row",
-      alignItems:"center",
-      justifyContent:"center"
-    },
-    input:{
-        backgroundColor:colors.accent,
-        padding:5,
-        paddingLeft:10,
-        borderRadius:4,
-        color:colors.lightGray,
-        flex:1
-    },
-    button:{
-        margin:5
-    },
-    error:{
-        color:"red",
-        fontWeight:"bold",
-        marginLeft:10
-    }
+  container: {
+    marginBottom: 20,
+    padding: 20,
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
+  },
+  containerInput: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    borderRadius: 10,
+    padding: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
+  },
+  input: {
+    flex: 1,
+    padding: 10,
+    borderWidth: 1,
+    borderColor: '#8B4513',
+    borderRadius: 5,
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    fontFamily: 'serif',
+    color: '#8B4513',
+  },
+  button: {
+    marginLeft: 10,
+    padding: 10,
+    backgroundColor: '#8B4513',
+    borderRadius: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 5,
+  },
+  error: {
+    color: 'red',
+    marginTop: 10,
+    fontFamily: 'serif',
+    textAlign: 'center',
+  },
 })

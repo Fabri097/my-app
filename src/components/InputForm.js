@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View,TextInput } from 'react-native'
-import { colors } from '../globals/colors'
+
 
 
 const InputForm = ({label,value, onChangeText,isSecure,error}) => {

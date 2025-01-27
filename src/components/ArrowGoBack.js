@@ -9,7 +9,7 @@ const ArrowGoBack = () => {
 
   return (
       <Pressable style={styles.goBack} onPress={()=>navigation.goBack()}>
-        <AntDesign  name="arrowleft" size={24} color={colors.lightGray} />
+        <AntDesign  name="arrowleft" size={24} color="black" />
       </Pressable>
   )
 }

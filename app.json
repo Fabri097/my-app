@@ -19,13 +19,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.che097.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-sqlite"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6bb5afb6-985c-44f9-8c4a-210c0db58c2f"
+      }
+    }
   }
 }
